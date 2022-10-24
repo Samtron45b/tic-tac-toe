@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/deploy-github/tic-tac-toe/static/css/main.850f686c.css",
-    "main.js": "/deploy-github/tic-tac-toe/static/js/main.5246ba69.js",
-    "index.html": "/deploy-github/tic-tac-toe/index.html",
-    "main.850f686c.css.map": "/deploy-github/tic-tac-toe/static/css/main.850f686c.css.map",
-    "main.5246ba69.js.map": "/deploy-github/tic-tac-toe/static/js/main.5246ba69.js.map"
+    "main.css": "/tic-tac-toe/static/css/main.850f686c.css",
+    "main.js": "/tic-tac-toe/static/js/main.5246ba69.js",
+    "index.html": "/tic-tac-toe/index.html",
+    "main.850f686c.css.map": "/tic-tac-toe/static/css/main.850f686c.css.map",
+    "main.5246ba69.js.map": "/tic-tac-toe/static/js/main.5246ba69.js.map"
   },
   "entrypoints": [
     "static/css/main.850f686c.css",
