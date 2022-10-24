@@ -57,12 +57,6 @@ class Game extends React.Component {
     super(props);
     this.state = {
       size: 3,
-      history: [
-        {
-          squares: Array(() => this.state.size**2).fill(null),
-          index: 0
-        }
-      ],
       stepNumber: 0,
       xIsNext: true,
       order: "Ascending",
@@ -100,7 +94,15 @@ class Game extends React.Component {
     winningLine.push(rowValue)
 
     this.state.lines = winningLine
-    console.log(winningLine)
+
+    var squares = Array(this.state.size**2).fill(null)
+
+    this.state.history = [
+      {
+        squares: squares,
+        index: 0
+      }
+    ]
   }
 
   handleClick(i) {
@@ -220,8 +222,10 @@ function calculateWinner(squares, lines) {
     if(win)
       return lines[i]
   }
-  if(squares.includes(null) === false && squares.includes(undefined) === false)
-    return "Draw"
+  if(squares.includes(null) === false )
+    {
+      return "Draw"
+    }
   return null;
 }
 
